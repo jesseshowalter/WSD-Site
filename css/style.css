@@ -71,6 +71,9 @@ h1{
 h1:hover{
 	margin-top:-50px;
 	-moz-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
 }
 
 h2{
@@ -176,8 +179,7 @@ header nav ul li a:hover{
 	width:1024px;
 	margin:0 auto;
 	overflow: visible;
-	background:url('../images/cars.jpg') no-repeat;
-	background-position: left top;
+	background:url('../images/cars.jpg') no-repeat left top;
 }
 
 #intro_container img{
@@ -202,6 +204,10 @@ blockquote p{
 	font-size: 1.4em;
 	line-height: 1.4em;
 	font-style:  italic;
+	-moz-border-top-left-radius:30px;
+	-moz-border-bottom-right-radius:30px;
+	-webkit-border-top-left-radius:30px;
+	-webkit-border-bottom-right-radius:30px;
 	border-top-left-radius:30px;
 	border-bottom-right-radius:30px;
 }
@@ -284,6 +290,9 @@ aside img:hover{
 	border:4px solid #E5AE26;
 	cursor:pointer;
 	-moz-transform:scale(1.4) rotate(360deg);
+	-webkit-transform:scale(1.4) rotate(360deg);
+	-o-transform:scale(1.4) rotate(360deg);
+	transform:scale(1.4) rotate(360deg);
 	
 }
 
@@ -321,6 +330,7 @@ footer .back_to_top{
 	-moz-transition:all 0.4s ease;
 	-webkit-transition:all 0.4s ease;
 	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
 }
 
 footer .back_to_top:hover{
