@@ -184,6 +184,7 @@ header nav ul li a:hover{
 /* Main CTA Styles ------------------------------------------------------------ */
 #intro_container{
 	width:1024px;
+	height:430px;
 	margin:0 auto;
 	overflow: visible;
 	background:url('../images/cars.jpg') no-repeat left top;
@@ -203,10 +204,7 @@ header nav ul li a:hover{
 }
 
 blockquote p{
-	/* -moz-transform: rotate(-4deg); */
 	text-shadow:1px 1px 0px #FFF;
-	/* background-color: rgba(229, 174, 38, 0.6); 
-	padding:10px 20px; */
 	color:#000;
 	font-size: 1.4em;
 	line-height: 1.4em;
