@@ -35,6 +35,7 @@ F5F2EB - Tope
 
 /* Basic Styles ------------------------------------------------------------ */
 body{
+	background-color:#FBF7F4;
 	background-image: url('../images/city.jpg'), url('../images/punch.jpg'), url('../images/fiber.jpg');
 	background-repeat:no-repeat, no-repeat, repeat;
 	background-position: center left, bottom right, center;
@@ -295,7 +296,7 @@ aside img:hover{
 	-webkit-transform:scale(1.4) rotate(360deg);
 	-o-transform:scale(1.4) rotate(360deg);
 	transform:scale(1.4) rotate(360deg);
-	
+
 }
 
 
