@@ -218,9 +218,6 @@ blockquote p{
 }
 
 blockquote em{
-
-	/* background-color: rgba(229, 174, 38, 0.6); 
-	padding-left:10px; */
 	text-shadow:1px 1px 0px #FFF;
 }
 
