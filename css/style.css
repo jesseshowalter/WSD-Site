@@ -317,12 +317,17 @@ aside img:hover{
 	border:none;
 }
 
-#the_legend img{
-	width:300px;
-	height:auto;
+#the_legend #portrait2{
 	float:left;
+	width:29.296875%; /* 300px */
+	margin:0 30px 5px 0;
+}
+
+#the_legend #portrait2 img{
+	z-index:10;
+	width:100%;
+	height:auto;
 	border:8px solid white;
-	margin:0 30px 15px 0;
 	box-shadow:0px 2px 10px #999;
 }
 
@@ -376,13 +381,27 @@ footer p{
 
 /* Media Queries 
 ============================================================ */
+
+
 @media screen and (min-width:768px) and (max-width: 959px) {
+
+	body{
+		background-color:#FBF7F4;
+		background:url('../images/fiber.jpg') repeat;
+	}
+
 	#wrapper{
 		background:#E4E4E4;
 	}
 }
 
 @media screen and (min-width:480px) and (max-width: 767px) {
+
+	body{
+		background-color:#FBF7F4;
+		background:url('../images/fiber.jpg') repeat;
+	}
+
 	#wrapper{
 		background:red;
 	}
@@ -423,6 +442,12 @@ footer p{
 }
 
 @media screen and (max-width: 479px) {
+
+	body{
+		background-color:#FBF7F4;
+		background:url('../images/fiber.jpg') repeat;
+	}
+
 	#wrapper{
 		background:yellow;
 	}
