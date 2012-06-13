@@ -272,7 +272,8 @@ blockquote em{
 }
 
 .infamous{
-	width: 27.83203125%; /*285px*/
+	width: 35%;
+	min-width:290px;
 	float:left;
 	margin:0;
 	padding:0;
@@ -281,23 +282,24 @@ blockquote em{
 aside{
 	float:left;
 	overflow: visible;
-	margin-bottom:30px;
+	margin:0 0 30px 0px;
+	width:65%;
 }
 
 aside li{
 	display:inline;
 }
+
 aside img{
-	width:150px;
+	width:140px;
 	height:auto;
 	border:4px solid white;
 	box-shadow:0px 0px 4px #666;
-	margin-left:10px;
+	margin:5px 0 10px 10px;
 	-moz-transition:all 0.4s ease;
 	-webkit-transition:all 0.4s ease;
 	-o-transition:all 0.4s ease;
 	float:left;
-	margin-bottom:10px;
 }
 
 aside img:hover{
@@ -320,6 +322,7 @@ aside img:hover{
 #the_legend #portrait2{
 	float:left;
 	width:29.296875%; /* 300px */
+	/* min-width:260px; */
 	margin:0 30px 5px 0;
 }
 
@@ -394,10 +397,13 @@ footer p{
 
 
 
-/* Media Queries 
+/* ============================================================
+					Media Queries 
 ============================================================ */
 
-/*------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width: 1036px) {
 
 	body{
@@ -406,15 +412,34 @@ footer p{
 	}
 
 	#wrapper{
-		background:red;
+		border:1px solid red;
 	}
 
-	#intro_container article { padding-left:3%;}
+	#intro_container article { 
+		padding-left:3%;
+	}
 
-	article blockquote p { display: none;}
-	article blockquote em { visibility: hidden;}
+	article blockquote p { 
+		display: none;
+	}
+	article blockquote em { 
+		visibility: hidden;
+	}
+
+	.infamous{
+		
+	}
+
+
 }
-/*------------------------------------------------*/
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
 @media screen and (min-width:480px) and (max-width: 767px) {
 
 	body{
@@ -423,7 +448,7 @@ footer p{
 	}
 
 	#wrapper{
-		background:yellow;
+		border:1px solid blue;
 		margin-top:0;
 		
 	}
@@ -437,8 +462,12 @@ footer p{
 		text-align: center;
 	}
 
-	article blockquote p { display: none;}
-	article blockquote em { visibility: hidden;}
+	article blockquote p { 
+		display: none;
+	}
+	article blockquote em { 
+		visibility: hidden;
+	}
 
 	#intro_container img{
 		display:none;
@@ -460,13 +489,11 @@ footer p{
 		transform:rotate(0deg);
 	}
 
-	
 	header nav ul {
 		float:none;
 		width:360px;
 		margin:0 auto;
 	}
-
 
 	#the_man article{
 		-moz-column-count:1;
@@ -476,7 +503,15 @@ footer p{
 	}
 
 }
-/*------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
 @media screen and (max-width: 479px) {
 
 	body{
@@ -486,8 +521,6 @@ footer p{
 
 	h1, h2, h3, h4, h5, h6{
 		text-align:center;
-		
-
 	}
 
 	#wrapper{
@@ -527,33 +560,33 @@ footer p{
 		text-align: center;
 		border:1px dashed #FFF;
 		border-radius:8px;
+		display: block;
 	}
 
 	header nav ul li a:hover{
-	/*background:#000; */
-	color:#FFF;
-	background:none;
-}
+		/*background:#000; */
+		color:#FFF;
+		background:none;
+	}
 
 	#intro_container img{
 		display:none;
 	}
 
 	#intro_container article{
-	padding:0 ;
-	margin-left:0px;
-	
-}
+		padding:0 ;
+		margin-left:0px;
+	}
 
 	h2{
-	font-size:1.8em;
-	font-family: 'Vast Shadow', cursive;
-	text-shadow:1px 0px 1px #FFF;
-	margin:0 auto;
-	line-height:1.1em;
-	text-align:center;
-	/* -moz-transform: rotate(-3deg); */
-}
+		font-size:1.8em;
+		font-family: 'Vast Shadow', cursive;
+		text-shadow:1px 0px 1px #FFF;
+		margin:0 auto;
+		line-height:1.1em;
+		text-align:center;
+		/* -moz-transform: rotate(-3deg); */
+	}
 
 	blockquote p{
 		display:none;
@@ -570,13 +603,23 @@ footer p{
 		column-count:1;
 	}
 
-	header nav ul li{
-		display: block;
-	}
-
 	#intro_container{
 		height:auto;
 		padding:20px 0;
+	}
+
+	.infamous{
+		margin:0 auto;
+		float:none;
+	}
+
+	aside{
+		margin:0 auto;
+		float:none;
+	}
+
+	aside ul{
+		margin:0 auto;
 	}
 }
 
