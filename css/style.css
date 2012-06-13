@@ -40,11 +40,16 @@ body{
 	background-repeat:no-repeat, no-repeat, repeat;
 	background-position: center left, bottom right, center;
 	color:#333;
+	font-size:100%;
 }
 
 a, p, ul, ol{
 	font-family: 'arvo', serif;
 	line-height:1.4em;
+}
+
+p{
+	margin:10px 0;
 }
 
 ol li{
@@ -152,7 +157,7 @@ header{
 }
 
 nav{
-	width:1024px;
+	max-width:1024px;
 	margin:0 auto;
 }
 
@@ -184,17 +189,23 @@ header nav ul li a:hover{
 
 /* Main CTA Styles ------------------------------------------------------------ */
 #intro_container{
-	width:1024px;
+	max-width:1024px;
 	height:430px;
 	margin:0 auto;
 	overflow: visible;
 	background:url('../images/cars.jpg') no-repeat left top;
 }
 
+#intro_container #portrait{
+	float:right;
+	margin-right:-60px;
+	width:53.02734375%; /* 543px */
+}
+
 #intro_container img{
 	float:right;
-	margin:0 -60px 0 0;
 	z-index:10;
+	width:100%;
 }
 
 #intro_container article{
@@ -225,7 +236,8 @@ blockquote em{
 
 /* Main Content Styles --------------------------------------------------------- */
 #wrapper{
-	width:984px;
+	width:90%;
+	max-width:984px;
 	padding:20px;
 	margin: -50px auto 0;
 	background:#FFF;
@@ -251,7 +263,6 @@ blockquote em{
 	-o-column-gap: 30px;
 	column-count: 2;
 	column-gap: 30px;
-	text-align: justify;
 }
 
 
@@ -317,7 +328,6 @@ aside img:hover{
 
 #the_legend p{
 	margin:10px 0;
-	text-align: justify;
 }
 
 /* Footer Styles ----------------------------------------------------- */
@@ -350,7 +360,7 @@ footer .back_to_top:hover{
 }
 
 footer{
-	width:1024px;
+	max-width:1024px;
 	margin:0 auto;
 	height:50px;
 	padding:10px;
@@ -367,14 +377,73 @@ footer p{
 /* Media Queries 
 ============================================================ */
 @media screen and (min-width:768px) and (max-width: 959px) {
-
+	#wrapper{
+		background:#E4E4E4;
+	}
 }
 
 @media screen and (min-width:480px) and (max-width: 767px) {
+	#wrapper{
+		background:red;
+	}
+
+	#intro_container img{
+		
+	}
+
+	header{
+		height:110px;
+	}
+
+	h1{
+		float:none;
+		margin:-70px auto 35px auto;
+	}
+	h1:hover{
+		margin-top:-70px;
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+
+	header nav ul {
+	float:none;
+	width:370px;
+	margin:0 auto;
+	}
+
+	#the_man article{
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	-o-column-count:1;
+	column-count:1;
+}
 
 }
 
 @media screen and (max-width: 479px) {
+	#wrapper{
+		background:yellow;
+	}
 
+	h1{
+		float:none;
+		margin:-70px auto 35px auto;
+	}
+	h1:hover{
+		margin-top:-70px;
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+
+	#the_man article{
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	-o-column-count:1;
+	column-count:1;
+}
 }
 
