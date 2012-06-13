@@ -428,7 +428,10 @@ footer p{
 		
 	}
 
-	#intro_container article { padding-left:3%;}
+	#intro_container article { 
+		padding-left:3%;
+		padding-top:30px;
+	}
 
 	h2{
 		text-align: center;
