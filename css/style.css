@@ -333,34 +333,6 @@ aside img:hover{
 }
 
 /* Footer Styles ----------------------------------------------------- */
-footer .back_to_top{
-	margin:0 auto;
-	padding:7px 30px;
-	color:#FFF;
-	background-color: #DCA623;
-	background-image: -o-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
-	background-image: -moz-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
-	background-image: -webkit-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
-	background-image: -ms-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
-	background-image: linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	float:right;
-	margin:-45px 435px 0 0;
-	-moz-transition:all 0.4s ease;
-	-webkit-transition:all 0.4s ease;
-	-o-transition:all 0.4s ease;
-	transition:all 0.4s ease;
-}
-
-
-footer .back_to_top:hover{
-	background:#EFCE7D;
-	text-shadow:1px 1px 1px #E5AE26;
-	border-top-left-radius:20px;
-	border-top-right-radius:20px;
-}
-
 footer{
 	max-width:1024px;
 	margin:0 auto;
@@ -374,9 +346,30 @@ footer p{
 
 
 
+footer .back_to_top{
+	padding:7px 30px;
+	color:#FFF;
+	background-color: #DCA623;
+	background-image: -o-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: -moz-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: -webkit-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: -ms-linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	background-image: linear-gradient(91deg , rgb(198,141,0) 0%, rgb(255,182,0) 100%);
+	border-radius:10px;
+	float:right;
+	/* margin:-45px 435px 0 0; */
+	-moz-transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
 
 
-
+footer .back_to_top:hover{
+	background:#EFCE7D;
+	text-shadow:1px 1px 1px #E5AE26;
+	border-radius:20px;
+}
 
 
 
@@ -615,5 +608,12 @@ footer p{
 	aside ul{
 		margin:0 auto;
 	}
+
+
+footer .back_to_top{
+	float:left;
+}
+
+
 }
 
