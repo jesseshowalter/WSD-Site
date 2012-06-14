@@ -375,15 +375,6 @@ footer .back_to_top:hover{
 
 
 
-
-
-
-
-
-
-
-
-
 /* ============================================================
 					Media Queries 
 ============================================================ */
@@ -398,9 +389,6 @@ footer .back_to_top:hover{
 		background:url('../images/fiber.jpg') repeat;
 	}
 
-	#wrapper{
-		border:1px solid red;
-	}
 
 	#intro_container article { 
 		padding-left:3%;
@@ -435,9 +423,7 @@ footer .back_to_top:hover{
 	}
 
 	#wrapper{
-		border:1px solid blue;
 		margin-top:0;
-		
 	}
 
 	#intro_container article { 
@@ -488,6 +474,7 @@ footer .back_to_top:hover{
 		-o-column-count:1;
 		column-count:1;
 	}
+
 
 }
 
@@ -607,12 +594,13 @@ footer .back_to_top:hover{
 
 	aside ul{
 		margin:0 auto;
+		float:none;
 	}
 
 
-footer .back_to_top{
-	float:left;
-}
+	footer .back_to_top{
+		float:left;
+	}
 
 
 }
