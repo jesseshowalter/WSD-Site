@@ -43,7 +43,7 @@ body{
 	font-size:100%;
 }
 
-a, p, ul, ol{
+a, p, ul, ol, td, th, label, input{
 	font-family: 'arvo', serif;
 	line-height:1.4em;
 }
@@ -143,6 +143,15 @@ em{
 	font-style: italic
 }
 
+.button{
+	padding:7px 30px;
+	color:#FFF !important;
+	background-color: #E5AE26;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
 /* Header / Navigation Styles ---------------------------------------------------- */
 header{
 	margin:0 auto;
@@ -233,7 +242,7 @@ blockquote em{
 #wrapper{
 	width:90%;
 	max-width:984px;
-	padding:20px;
+	padding:20px 20px 50px 20px;
 	margin: -50px auto 0;
 	background:#FFF;
 	-moz-border-radius:10px;
@@ -311,7 +320,7 @@ aside img:hover{
 
 /* "The Legend" Section Styles ----------------------------------------------------- */
 #the_legend{
-	border:none;
+	border:;
 }
 
 #the_legend #portrait2{
@@ -371,6 +380,103 @@ footer .back_to_top:hover{
 	border-radius:20px;
 }
 
+/* Table & Form Styles ----------------------------------------------------- */
+
+#table_form{
+
+}
+
+#table_form h4{
+	margin-bottom:1.6em;
+}
+
+/* Table Styles ---- */
+
+#table_form section{
+	width:60%;
+	float: left;
+}
+
+#table_form section table{
+	background:#FFF;
+	border-collapse: collapse;
+	float:left;
+	margin:0 0.05em;
+	border:2px solid #E5B42F;
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	box-shadow: 0px 3px 4px #999;
+}
+
+#table_form section td{
+	text-align:center;
+	border-top:1px solid #F1F1F1;
+	padding: 0.5em 1.6em;
+	color:#666;
+}
+
+#table_form section th{
+	text-align:center;
+	padding: 1em 1.8em;
+	color:#E5AE26;
+	background:url(../images/fiber.jpg);
+}
+
+#table_form section td.sell{
+	background:#F5F2EB;
+	padding:1.4em 0 !important;
+}
+
+
+#table_form table.best_deal{
+	-moz-transform:scale(1.08);
+	-webkit-transform:scale(1.08);
+	-o-transform:scale(1.08);
+	transform:scale(1.08);
+	border:2px solid #D24044;
+}
+
+#table_form table.best_deal th{
+	color:#D24044;
+}
+
+#table_form table.best_deal .button{
+	background:#D24044;
+}
+
+/* Form Styles ---- */
+	
+form{
+	width:38%;
+	float:right;
+}
+
+form div{
+	margin:0 0 1em 0;
+}
+
+form label{
+	display:block;
+}
+
+form input{
+	border:1px solid #CCC;
+	color:#E5AE26;
+	padding:0.4em;
+	width:40%;
+}
+
+form textarea{
+	border:1px solid #CCC;
+	color:#E5AE26;
+	padding:0.4em;
+	width:96%;
+}
+
+
+
+
+
 
 
 
@@ -401,8 +507,21 @@ footer .back_to_top:hover{
 		visibility: hidden;
 	}
 
-	.infamous{
-		
+	#table_form section{
+		width:38em;
+		float: none;
+		margin:0 auto;
+		margin-bottom:32em;
+	}
+
+	#table_form section h4{
+		text-align:center;
+	}
+
+	form{
+		width:100%;
+		float:none;
+		margin: 0 auto;
 	}
 
 
@@ -473,6 +592,21 @@ footer .back_to_top:hover{
 		-webkit-column-count:1;
 		-o-column-count:1;
 		column-count:1;
+	}
+
+	#table_form section{
+		display:none;
+	}
+
+
+	#table_form section h4{
+		text-align:center;
+	}
+
+	form{
+		width:100%;
+		float:none;
+		margin: 0 auto;
 	}
 
 
@@ -600,6 +734,20 @@ footer .back_to_top:hover{
 
 	footer .back_to_top{
 		float:left;
+	}
+
+	#table_form section{
+		display:none;
+	}
+
+	#table_form section h4{
+		text-align:center;
+	}
+
+	form{
+		width:100%;
+		float:none;
+		margin: 0 auto;
 	}
 
 
